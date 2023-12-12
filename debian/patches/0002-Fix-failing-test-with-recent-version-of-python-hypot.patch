@@ -1,0 +1,21 @@
+From: Greg <gregobinna@gmail.com>
+Date: Sat, 10 Aug 2019 15:10:33 +0000
+Subject: Fix failing test with recent version of python-hypothesis
+
+---
+ tests/test_check.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/tests/test_check.py b/tests/test_check.py
+index f36a75d..29617a3 100755
+--- a/tests/test_check.py
++++ b/tests/test_check.py
+@@ -210,7 +210,7 @@ def bytes_in_file(data):
+ 
+ 
+ class TestDetectionProperties(unittest.TestCase):
+-    @given(binary(average_size=512))
++    @given(binary(max_size=512))
+     def test_never_crashes(self, data):
+         with bytes_in_file(data) as f:
+             is_binary(f)
