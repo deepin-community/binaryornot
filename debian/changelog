@@ -1,5 +1,94 @@
-template-repository (1.0-1) unstable; urgency=medium
+binaryornot (0.4.4+dfsg-5) unstable; urgency=medium
 
-  * Initial release
+  [ Ondřej Nový ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Sandro Tosi ]
+  * Use the new Debian Python Team contact name and address
+
+ -- Sandro Tosi <morph@debian.org>  Thu, 21 Apr 2022 20:10:44 -0400
+
+binaryornot (0.4.4+dfsg-4) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.1.
+
+  [ Vincent Bernat ]
+  * d/patches: fix FTBFS due to a change in python-hypothesis.
+    Closes: #948971.
+
+ -- Vincent Bernat <bernat@debian.org>  Fri, 17 Jan 2020 08:13:17 +0100
+
+binaryornot (0.4.4+dfsg-3) unstable; urgency=medium
+
+  * Team upload.
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * Use debhelper-compat instead of debian/compat.
+  * Drop Python 2 support (Closes: #936205).
+  * Bump debhelper compat level to 12.
+  * Bump standards version to 4.4.0.
+
+ -- Ondřej Nový <onovy@debian.org>  Thu, 12 Sep 2019 17:04:32 +0200
+
+binaryornot (0.4.4+dfsg-2) unstable; urgency=medium
+
+  * Fix crashing test with recent python-hypothesis. Closes: #887579.
+
+ -- Vincent Bernat <bernat@debian.org>  Thu, 18 Jan 2018 08:53:35 +0100
+
+binaryornot (0.4.4+dfsg-1) unstable; urgency=medium
+
+  * New upstream version.
+  * d/patches: refresh patches after gbp pq conversion.
+  * d/watch: handle +dfsg repack correctly.
+  * d/control: bump Standards-Version.
+  * d/control: use debhelper 10.
+  * d/control: add testsuite.
+
+ -- Vincent Bernat <bernat@debian.org>  Mon, 13 Nov 2017 23:41:25 +0100
+
+binaryornot (0.4.0+dfsg-0.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+
+  [ Roger Shimizu ]
+  * Remove non-free image files, and repack as +dfsg.
+  * Add patch to remove tests regarding to non-free image files.
+    (Closes: #854851)
+
+ -- Roger Shimizu <rogershimizu@gmail.com>  Wed, 15 Feb 2017 21:07:15 +0900
+
+binaryornot (0.4.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version.
+  * Use PYBUILD_NAME in d/rules.
+  * Add missing Build-Depends on python-{chardet,hypothesis}.
+
+ -- Vincent Bernat <bernat@debian.org>  Sun, 15 Nov 2015 23:05:18 +0100
+
+binaryornot (0.3.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version.
+  * Run unit tests.
+
+ -- Vincent Bernat <bernat@debian.org>  Mon, 26 May 2014 16:30:25 +0200
+
+binaryornot (0.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+     + Codebase has been improved. Closes: #722502.
+
+ -- Vincent Bernat <bernat@debian.org>  Sun, 29 Sep 2013 12:29:42 +0200
+
+binaryornot (0.1.1-1) unstable; urgency=low
+
+  * Initial release. Closes: #722156.
+
+ -- Vincent Bernat <bernat@debian.org>  Sun, 08 Sep 2013 16:41:15 +0200
